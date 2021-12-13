@@ -1,8 +1,9 @@
 
 
 
-// Navbar hover dropdown
 $(document).ready(function () {
+
+// Navbar hover dropdown
     $("#home_link").hover(function () {
         $("#dropdown_home").slideDown(300);
         }, function () {
@@ -39,6 +40,30 @@ $(document).ready(function () {
             $("#dropdown_blog").slideUp(200);
         }
     );
+    
+    // --------------------------
+
+    // Tab nav
+    $("#description").click(function (e) { 
+        e.preventDefault();
+        $("#description").toggleClass("nav_active");
+    });
+    $("#reviews").click(function (e) { 
+        e.preventDefault();
+        $("#reviews").toggleClass("nav_active");
+    });
+
+    // --------------
+
+
+
+
+
+
+
+
 });
 
-// --------------------------
+
+
+
