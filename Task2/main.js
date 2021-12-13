@@ -4,19 +4,41 @@
 // Navbar hover dropdown
 $(document).ready(function () {
     $("#home_link").hover(function () {
-        $("#dropdown_home").slideToggle(400);
-    });
+        $("#dropdown_home").slideDown(300);
+        }, function () {
+            $("#dropdown_home").slideUp(200);
+        }
+    );
     $("#about_link").hover(function () {
-        $("#dropdown_about").slideDown(400,function(){
-            $("#dropdown_about").hover(function () {
-                $(this).slideDown();
-            });
-        });
-    },function(){
-        $("#dropdown_about").slideUp(300,function(){
-            $("#dropdown_about").hover(function () {
-                $(this).slideUp();
-            });
-        });
-    });
+        $("#dropdown_about").slideDown(300);
+        }, function () {
+            $("#dropdown_about").slideUp(200);
+        }
+    );
+    $("#services_link").hover(function () {
+        $("#dropdown_services").slideDown(300);
+        }, function () {
+            $("#dropdown_services").slideUp(200);
+        }
+    );
+    $("#case_link").hover(function () {
+        $("#dropdown_case").slideDown(300);
+        }, function () {
+            $("#dropdown_case").slideUp(200);
+        }
+    );
+    $("#shop_link").hover(function () {
+        $("#dropdown_shop").slideDown(300);
+        }, function () {
+            $("#dropdown_shop").slideUp(200);
+        }
+    );
+    $("#blog_link").hover(function () {
+        $("#dropdown_blog").slideDown(300);
+        }, function () {
+            $("#dropdown_blog").slideUp(200);
+        }
+    );
 });
+
+// --------------------------
